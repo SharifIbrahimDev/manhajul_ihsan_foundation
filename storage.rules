@@ -1,0 +1,35 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+    
+    function isFileSizeAcceptable(maxSizeMB) {
+      return request.resource.size < maxSizeMB * 1024 * 1024;
+    }
+
+    // Chat images/files
+    match /chat_images/{imageName} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && isImage() && isFileSizeAcceptable(10);
+    }
+    
+    match /chat_files/{fileName} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && isFileSizeAcceptable(20);
+    }
+
+    // Profile pictures
+    match /profile_pictures/{userId}/{imageName} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && request.auth.uid == userId && isImage() && isFileSizeAcceptable(5);
+    }
+  }
+}

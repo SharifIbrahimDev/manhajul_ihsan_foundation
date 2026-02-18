@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "310909747679",
+    "project_id": "sabo-96f81",
+    "storage_bucket": "sabo-96f81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310909747679:android:0515add487ce67a934c46a",
+        "android_client_info": {
+          "package_name": "com.example.manhajul_ihsan_foundation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdjbX_5-85kABj8myjL48A3WLWqvT5haI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310909747679:android:67b4ba0c8d66e40d34c46a",
+        "android_client_info": {
+          "package_name": "com.ibrahimsharif.log_nav"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdjbX_5-85kABj8myjL48A3WLWqvT5haI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
