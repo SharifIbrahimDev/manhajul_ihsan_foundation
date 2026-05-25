@@ -255,10 +255,9 @@ flutter build ios --release
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make changes with proper testing
-4. Submit a pull request
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for detailed instructions on how to get started.
+
+You can also check out our [Roadmap](ROADMAP.md) to see planned features and where we are heading.
 
 ## License
 
